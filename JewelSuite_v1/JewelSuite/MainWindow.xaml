@@ -1,0 +1,45 @@
+﻿<Window x:Class="JewelSuite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JewelSuite"
+        mc:Ignorable="d"
+        Title="JewelSuite" Height="306.332" Width="593.404" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" >
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFCDD2F1" Offset="1"/>
+            <GradientStop Color="#FFECE2E2" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="343*"/>
+            <ColumnDefinition Width="242*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Left" Margin="50,30,20,20" Grid.Row="1" TextWrapping="Wrap" Text="Fluid Contact Depth" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="50,30,20,20" Grid.Row="2" TextWrapping="Wrap" Text="Select Unit" VerticalAlignment="Top"/>
+                <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="50,20,100,20" Grid.Row="2" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Units}" SelectedItem="{Binding SelectedUnit, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button Grid.Column="0" HorizontalAlignment="Right" Margin="50,20,100,20" Grid.Row="3" VerticalAlignment="Top"  Content="Calculate Volume" Command="{Binding CalculateVolumeCommand}"></Button>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="50,20,100,20" Grid.Row="3" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding CalculatedVolume}" />
+                <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="50,20,100,20" Grid.Row="1"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding FluidContactDepth, UpdateSourceTrigger=PropertyChanged}" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

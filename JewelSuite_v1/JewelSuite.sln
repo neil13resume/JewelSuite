@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1684
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelSuite", "JewelSuite\JewelSuite.csproj", "{E001385F-4AFC-436F-96FC-4E041415FC51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestJewelSuite", "NUnitTestJewelSuite\NUnitTestJewelSuite.csproj", "{DA5B9715-389C-4245-A723-A6BDF563C6BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E001385F-4AFC-436F-96FC-4E041415FC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E001385F-4AFC-436F-96FC-4E041415FC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E001385F-4AFC-436F-96FC-4E041415FC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E001385F-4AFC-436F-96FC-4E041415FC51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA5B9715-389C-4245-A723-A6BDF563C6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5B9715-389C-4245-A723-A6BDF563C6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5B9715-389C-4245-A723-A6BDF563C6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5B9715-389C-4245-A723-A6BDF563C6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68F96578-5C93-4992-B29C-C1D37A00D5E8}
+	EndGlobalSection
+EndGlobal
